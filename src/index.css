@@ -13,15 +13,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
@@ -35,20 +26,104 @@ h1 {
   line-height: 1.1;
 }
 
+
+.box {
+  background-color: rgba(20, 20, 52, 0.343);
+  margin: .5rem;
+  padding: 1rem;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='rgba(255,255,255,0.1)' stroke-width='4' stroke-dasharray='5%2c 24' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+}
+
+.postForm {
+  min-width: 15rem;
+  min-height: 10rem;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+}
+
+.postBox {
+  margin: auto 0;
+  padding: 0;
+  display: block;
+  /* background-color: #3199e9; */
+  text-align: left;
+}
+
+.postDetails{
+  padding-left: 6rem;
+}
+
+.profilePic {
+  background-color: #624968;
+  color: #3199e983;
+  width: 5rem;
+  aspect-ratio: 1 / 1;
+  float: left;
+}
+
+.replyPic{
+  border-radius: 100%;
+  width: 15%;
+  margin: .5rem;
+}
+
+.actions {
+  display: flex;
+  padding: 1rem;
+  gap: 2rem;
+ 
+}
+
+.actions p {
+  text-align: right;
+  font-size: 1rem;
+}
+
+.reply{
+  text-align: left;
+}
+.like{
+  text-align: right;
+}
+
+
+textarea {
+  resize: none;
+  border: none;
+  border-radius: .3rem;
+  padding: .4rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#image {
+  float: left;
+}
+
+img{
+  width: 50%;
+}
+
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
+  border: 1px solid white;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #064c4800;
+  color: white;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.15s ease-in;
 }
+
 button:hover {
-  border-color: #646cff;
+  background-color: #3199e9;
+  color: #242424;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -59,9 +134,11 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
