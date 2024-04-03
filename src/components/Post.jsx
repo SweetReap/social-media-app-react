@@ -1,4 +1,4 @@
-// import Comment from "./Comment";
+import Comment from "./Comment";
 // import CommentSection from "./CommentSection";
 import { useState } from "react";
 
@@ -36,7 +36,7 @@ function CommentSection(props) {
       return (
         <div className="box reply">
           <div className="replyPic profilePic"></div>
-          <p key={idx}>{data}</p>
+          <Comment content={data} key={idx}/>
           <div className="like">Likes: A lot</div>
           <div className="like">Reposts: 100</div>
           <div className="like">Replies: 100</div>
