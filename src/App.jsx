@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
+import { Typography } from "@mui/material";
 
-import Post from "./components/Post";
 import PostForm from "./components/PostForm";
 import PostFeed from "./components/PostFeed";
 
@@ -16,7 +16,7 @@ function App() {
   };
   return (
     <div className="box">
-      <h1>Fakebook!</h1>
+      <Typography variant="h1" gutterBottom>FakeBook!</Typography>
       <PostForm handleSubmit={onNewMessage}/>
       <PostFeed data={feed}/>
     </div>
